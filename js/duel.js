@@ -214,10 +214,10 @@ btnSpin.addEventListener('click', () => {
             resultMessage.textContent = `You ${yourPercent}% | ${opponent} ${opponentPercent}%`;
             amountDisplay.textContent = `You pay: $${yourAmount.toFixed(2)} | ${opponent} pays: $${opponentAmount.toFixed(2)}`;
 
-            const wins = parseInt(localStorage.getItem('wins') || 0);
-            const losses = parseInt(localStorage.getItem('losses') || 0);
-            const totalGames = parseInt(localStorage.getItem('totalGames') || 0);
-            const totalPaid = parseFloat(localStorage.getItem('totalPaid') || 0);
+            const wins = parseInt(localStorage.getItem('wins')) || 0;
+            const losses = parseInt(localStorage.getItem('losses')) || 0;
+            const totalGames = parseInt(localStorage.getItem('totalGames')) || 0;
+            const totalPaid = parseFloat(localStorage.getItem('totalPaid')) || 0;
             localStorage.setItem('totalPaid', (totalPaid + yourAmount).toFixed(2));
 
             if (yourPercent <= 50) {
@@ -315,7 +315,11 @@ btnSpin.addEventListener('click', () => {
 });
 
 btnConfirm.addEventListener('click', () => {
-    window.location.href = 'app.html';
+    if (isYuiDuel) {
+        btnConfirm.disabled = true;
+    } else {
+    window.location.href = 'index.html';
+    }
 });
 
 btnPlayAgain.addEventListener('click', () => {
@@ -323,6 +327,6 @@ btnPlayAgain.addEventListener('click', () => {
     localStorage.setItem('isYuiDuel', 'true');
     window.location.reload();
     } else {
-        btnPlayAgain.disabled = true;
+        window.location.href = 'app.html';
     }
 });
