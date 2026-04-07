@@ -314,8 +314,9 @@ btnSpin.addEventListener('click', () => {
     }, 5000);
 });
 
-btnConfirm.disabled = true;
-;
+btnConfirm.addEventListener('click', () => {
+    window.location.href = 'app.html';
+});
 
 btnPlayAgain.addEventListener('click', () => {
     if (isYuiDuel){
