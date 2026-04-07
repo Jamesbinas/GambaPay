@@ -308,7 +308,6 @@ btnSpin.addEventListener('click', () => {
         }, 50);
         
         btnConfirm.classList.remove('hidden');
-        btnConfirm.disabled = true;
         btnPlayAgain.classList.remove('hidden');
         
 
