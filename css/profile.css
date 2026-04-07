@@ -1,0 +1,197 @@
+#profile-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 4rem 2rem 2rem;
+    text-align: center;
+}
+
+.avatar{
+    font-size: 5rem;
+    background-color: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    width: 120px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  0 0 24px var(--accent-glow);
+}
+
+.username{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    letter-spacing: 3px;
+}
+
+.title-badge{
+    background-color: var(--accent);
+    color: var(--bg-primary);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    padding: 0.25rem 1rem;
+    border-radius: 999px;
+}
+
+.status-message{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.theme-picker{
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.theme-dot{
+    width: 24px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid var(--border-color);
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.theme-dot:active{
+    border-color: var(--text-primary);
+    transform: scale(1.2);
+}
+
+.theme-dot:hover{
+    transform: scale(1.3);
+    border-color: var(--text-primary);
+}
+
+.theme-dot.default {background-color: hsl(51, 100%, 50%);}
+.theme-dot.royal {background-color: hsl(283, 39%, 53%);}
+.theme-dot.demon {background-color: hsl(0, 95%, 34%);}
+.theme-dot.frost {background-color: hsl(186, 100%, 50%);}
+
+#profile-stats{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.stat-card{
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    flex: 1;
+    min-width: 140px;
+    transition: box-shadow 0.3s;
+}
+
+.stat-card:hover{
+    box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.stat-number{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#achievements{
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#achievements h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: var(--accent);
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.achievements-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+}
+
+.achievements-card{
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    transition: box-shadow 0.3s;
+}
+
+.achievements-card.locked{
+    opacity: 0.4;
+    filter: grayscale(100%);
+}
+
+.achievements-card:not(.locked):hover{
+    box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.achievements-icon{
+    font-size: 2rem;
+}
+
+.achievements-name{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.yui-easter-egg{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow:  0 0 20px var(--accent-glow);
+    z-index: 999;
+}
+
+.yui-avatar{
+    font-size: 2rem;
+}
+
+.yui-message{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    font-style: italic;
+}

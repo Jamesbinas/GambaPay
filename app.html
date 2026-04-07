@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamba - Play</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/app.css"
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">GambaPay</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="app.html">Play</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="yui.html">Beat Yui</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="app-arena">
+
+            <div class="slot-machine">
+                <h2>Enter Bill Amount</h2>
+                <div class="slot-display">
+                    <input type="number" id="bill-input" placeholder="0.00">
+                </div>
+                <button class="btn-lever">🥖</button>
+            </div>
+
+            <div class="friend-list">
+                <h2>Choose Opponent</h2>
+                <div class="friend-scroll">
+                    <div class="friend-card">
+                        <div class="friend-avatar"></div>
+                        <div class="friend-name">Player One</div>
+                    </div>
+                    <div class="friend-card">
+                        <div class="friend-avatar"></div>
+                        <div class="friend-name">Player Two</div>
+                    </div>
+                    <div class="friend-card">
+                        <div class="friend-avatar"></div>
+                        <div class="friend-name">Player Three</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="popup hidden" id="friend-popup">
+            <div class="popup-card">
+                <div class="popup-avatar"></div>
+                <div class="popup-name">Player Name</div>
+                <div class="popup-buttons">
+                    <button class="btn-message">Send Message</button>
+                    <button class="btn-pay">Pay</button>
+                    <button class="btn-duel">Duel Challenge</button>
+                </div>
+                <button class="btn-close">X</button>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-brand">GambaPay</div>
+            <p class="footer-credit">Built by James Martin J. Biñas</p>
+        </div>
+    </footer>
+
+    <script src="js/global.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

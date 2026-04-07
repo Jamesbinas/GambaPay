@@ -1,0 +1,248 @@
+#app-arena{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem 2rem;
+    flex-wrap: wrap;
+}
+
+.slot-machine{
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    min-width: 320px;
+    box-shadow: 0 0 30ps var(--accent-glow);
+}
+
+.slot-machine h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    color: var(--accent);
+    letter-spacing: 2px;
+}
+
+.slot-display{
+    background-color: var(--bg-primary);
+    border: 2px solid var(--accent);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    width: 100%;
+}
+
+.slot-display input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    color: var(--accent);
+    text-align: center;
+    letter-spacing: 2;
+}
+
+.slos-display input::placeholder{
+    color: var(--accent);
+    opacity: 0.3;
+}
+
+.btn-lever{
+    font-size: 3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+    filter: drop-shadow(0 0 10px var(--accent-glow));
+}
+
+.btn-lever:hover{
+    transform: scale(0.9) rotate(360deg);
+}
+
+.friend-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    min-width: 280px;
+    max-width: 369px;
+}
+
+.friend-list h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    color: var(--accent);
+    letter-spacing: 2px;
+}
+
+.friend-scroll{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+}
+
+.friend-scroll::-webkit-scrollbar {
+    width: 4px;
+}
+
+.friend-scroll::-webkit-scrollbar-track{
+    background: var(--bg-primary);
+}
+
+.friend-scroll::-webkit-scrollbar-thumb{
+    background: var(--accent);
+    border-radius: 999px;
+}
+
+.friend-card{
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1 rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    transition:  box-shadow 0.3, border-color 0.3;
+}
+
+.friend-card:hover{
+    box-shadow: 0 0 16px var(--accent-glow);
+    border-color: var(--accent);
+}
+
+.friend-avatar{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: var(--accent);
+    opacity: 0.4;
+    flex-shrink: 0;
+}
+
+.popup{
+    position: fixed;
+    inset: 0;
+    background-color: hsla(0%, 0%, 0%, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.popup.hidden{
+    display: none;
+}
+
+.popup-card{
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    min-width: 300px;
+    box-shadow: 0 0 40px var(--accent-glow);
+    position: relative;
+}
+
+.popup-avatar{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--accent);
+    opacity: 0.4;
+}
+
+.popup-name{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8em;
+    color: var(--text-primary);
+    letter-spacing: 2px;
+}
+
+.popup-button{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;   
+}
+
+.btn-message{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    padding: 0.75rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.btn-message:hover{
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.btn-pay{
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--accent);
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+
+    transition: box-shadow 0.3s;
+}
+
+.btn-pay:hover{
+    box-shadow: 0 0 12px var(--accent-glow);
+}
+
+.btm-duel{
+    background-color: var(--accent);
+    border:none;
+    color: var(--bg-primary);
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+.btn-duel:hover{
+    box-shadow: 0 0 16px var(--accent-glow);
+}
+
+.btn-close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.3s;
+}
+
+.btn-close:hover{
+    color: var(--accent);
+}

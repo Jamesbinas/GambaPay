@@ -1,0 +1,167 @@
+.live-ticker{
+    background-color: var(--accent);
+    padding: 0.6rem 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.ticker-track{
+    display: inline-flex;
+    gap: 4rem;
+    animation: ticker 20s linear infinite;
+}
+
+@keyframes ticker{
+    from { transform: translateX(0);}
+    to { transform: translateX(-50%);}
+}
+
+#podium{
+    padding:    4rem 2rem;
+    text-align: center;
+}
+
+#podium h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    color: var(--accent);
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+}
+
+.podium-container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.shame-card{
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex: 1;
+    min-width: 180px;
+    transition: box-shadow 0.3;
+}
+
+.shame-card:hover{
+    box-shadow: 0 0 24px var(--accent-glow);
+}
+
+.shame-card.first{
+    border-color: var(--accent);
+    box-shadow: 0 0 30px var(--accent-glow);
+    transform: translateY(-20px);
+}
+
+.shame-rank{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    color: var(--text-secondary);
+    letter-spacing: 2px;
+}
+
+.shame-card.first .shame-rank{
+    color: var(--accent);
+    font-size: 1.2rem;
+}
+
+.shame-avatar{
+    font-size: 2.5rem;
+}
+
+.shame-username{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1rem;
+    font-weight:600;
+    color: var(--text-primary);
+}
+
+.shame-amount{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.shame-trophy{
+    font-size: 1.5em;
+}
+
+#rankings{
+    padding: 2rem 2rem 4rem;
+    max-width: 800px;
+    margin: 0 aut0;
+}
+
+#rankings h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: var(--accent);
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+}
+
+.ranking-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.rank-row{
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: box-shadow 0.3s;
+}
+
+.rank-row:hover{
+    box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.rank-number{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    color: var(--accent);
+    min-width: 40px;
+}
+
+.rank-avatar{
+    font-size: 1.8rem;
+}
+
+.rank-username{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+}
+
+.rank-mock{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    flex:1;
+}
+
+.rank-stats{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GambaPay - Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">GambaPay</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="app.html">Play</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="yui.html">Beat Yui</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="profile-hero">
+            <div class="avatar">👤</div>
+            <div class="username">Akashi</div>
+            <div class="title-badge">Newcomer</div>
+            <div class="status-message">Ready to duel!!</div>
+
+            <div class="theme-picker">
+                <div class="theme-dot default" data-theme="default"></div>
+                <div class="theme-dot royal" data-theme="phantom"></div>
+                <div class="theme-dot demon" data-theme="crimson"></div>
+                <div class="theme-dot frost" data-theme="ghost"></div>
+            </div>
+        </section>
+
+        <section id="profile-stats">
+            <div class="stat-card">
+                <div class="stat-number" id="stat-games">0</div>
+                <div class="stat-label">Duels Fought</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="stat-wins">0</div>
+                <div class="stat-label">Duels Won</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="stat-losses">0</div>
+                <div class="stat-label">Duels Lost</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="stat-paid">$0.00</div>
+                <div class="stat-label">Total Paid</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="stat-winrate">0%</div>
+                <div class="stat-label">Win Rate</div>
+            </div>
+        </section>
+
+        <section id="achievements">
+            <h2>achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievements-card locked">
+                    <div class="achievements-icon">🏆</div>
+                    <div class="achievements-name">First Duel</div>
+                </div>
+                 <div class="achievements-card locked">
+                    <div class="achievements-icon">🎰</div>
+                    <div class="achievements-name">First Win</div>
+                </div>
+                 <div class="achievements-card locked">
+                    <div class="achievements-icon">💸</div>
+                    <div class="achievements-name">Big Spender</div>
+                </div>
+                 <div class="achievements-card locked">
+                    <div class="achievements-icon">💀</div>
+                    <div class="achievements-name">Financially Deceased</div>
+                </div>
+                 <div class="achievements-card locked">
+                    <div class="achievements-icon">🦇</div>
+                    <div class="achievements-name">Beat Yui</div>
+                </div>
+                 <div class="achievements-card locked">
+                    <div class="achievements-icon">🔥</div>
+                    <div class="achievements-name">Win Streak</div>
+                </div>
+                 <div class="achievements-card locked">
+                    <div class="achievements-icon">😭</div>
+                    <div class="achievements-name">Tragic Streak</div>
+                </div>
+                 <div class="achievements-card locked">
+                    <div class="achievements-icon">👑</div>
+                    <div class="achievements-name">Leaderboard King</div>
+                </div>
+                 <div class="achievements-card locked">
+                    <div class="achievements-icon">🎖️</div>
+                    <div class="achievements-name">Veteran</div>
+                </div>
+                <div class="achievements-card locked">
+                    <div class="achievements-icon">🌙</div>
+                    <div class="achievements-name">Night Gambler</div>
+                </div>
+            </div>
+        </section>
+
+        <div class="yui-easter-egg hidden" id="yui-easter-egg">
+            <div class="yui-avatar">🦇</div>
+            <div class="yui-message">...pathetic.</div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-brand">GambaPay</div>
+            <p class="footer-credit">Built by James Martin J. Biñas</p>
+        </div>
+    </footer>
+
+    <script src="js/global.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>
